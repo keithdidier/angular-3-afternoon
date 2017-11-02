@@ -4,6 +4,11 @@
     
     <div class="list__swag-container">
       <!-- Swag Here -->
+      <swag ng-repeat="item in listCtrl.swag"
+            item="item"
+            action="listCtrl.goToDetails(item.id)"
+            action-label="details">
+      </swag>
     </div>
   </div>
 </div>
